@@ -67,8 +67,10 @@ class Engine(object):
         plt.show()
         plt.plot(df)
         plt.show()
-        pp(np.mean(df))
-        pp(np.median(df))
+        pp(df.mean())
+        pp(df.median())
+        pp(df.std())
+        pp(df.var())
         stats.mode(df)
         client.close()
 
